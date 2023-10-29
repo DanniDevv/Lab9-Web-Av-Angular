@@ -1,0 +1,21 @@
+<section class="py-4 my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="mb-3 text-primary">Images Gallery</h2>
+            </div>
+
+            <div class="col-md-6 col-lg-4" *ngFor="let image of images">
+                <div class="card my-3">
+                    <img [src]="image.imageUrl" class="card-image-top" alt="thumbnail"
+                        style="max-height: 200px; width: 100%; object-fit: cover;">
+                    <div class="card-body">
+                        <h3 class="card-title">{{image.title}}</h3>
+                        <p class="card-text">{{image.description}}</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
